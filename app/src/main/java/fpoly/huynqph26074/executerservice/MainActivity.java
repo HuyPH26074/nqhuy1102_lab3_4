@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
                         Document documentSua = new Document(tens, gias, hangs);
 
 
-                        updateData("http://192.168.137.47:3000/product/:id", documentSua.getId(), tens, gias, hangs, new ResponseListener() {
+                        updateData("http://192.168.137.47:3000/product/464", documentSua.getId(), tens, gias, hangs, new ResponseListener() {
                             @Override
                             public void onResponse(String response) {
                                 Log.d("ExecuterService", response);
